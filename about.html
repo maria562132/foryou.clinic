@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        html, body {
+            margin: 0;
+        }
+        body {
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .wrapper {
+            width: 1400px;
+            display: flex;
+            margin: 0 auto;
+            background-color: rgb(174, 193, 255);
+        }
+        .main {
+            display: flex;
+            flex-flow: column;
+            width: 85%;
+        }
+        .menu {
+            width: 140px;
+            background-color: rgb(174, 193, 255);
+            padding: 10px 20px 0px;
+        }
+        .menu-list {
+            padding-left: 20px;
+        }
+        .header {
+            min-height: 200px;
+        }
+        .content {
+            background-color: white;
+            min-height: 300px;
+            padding: 20px;
+        }
+        .footer {
+            background-color: rgb(133, 161, 255);
+            min-height: 140px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #193B82;
+        }
+        .p {
+            margin-bottom: 8px;
+            margin-top: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .items {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <h1 class="h1">Menu</h1>
+            <hr />
+            <ul class="menu-list">
+                <li class="items"><a href="principle.html">Página principal</a></li>
+                <br />
+                <li class="items"><a href="about.html">Sobre nós</a></li>
+                <br />
+                <li class="items"><a href="service.html">Horários de atendimento</a></li>
+                <br />
+                <li class="items"><a href="contact.html">Contatos</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="about.jpg" height="200px" width="1146px"/>
+            </div>
+    
+            <div class="content">
+                <h2 class="h1">Uma clínica feita para você!</h2>
+                <p class="p">Sempre trabalhando para cuidar de sua saúde musculoesquelética com <b>dedicação</b> e <b>expertisse</b>. Aqui, entendemos que cada passo que você dá e cada movimento que realiza são <b>fundamentais</b> para o seu bem-estar. Nossa equipe de especialistas em ortopedia está comprometida em proporcionar cuidados excepcionais para tratar lesões, condições ortopédicas e distúrbios relacionados.</p>
+                <p class="p">Na nossa clínica, priorizamos a abordagem personalizada, compreendendo as necessidades individuais de cada paciente. Utilizamos <b>tecnologias avançadas</b> e práticas baseadas em evidências para diagnosticar e tratar uma <b>ampla variedade</b> de problemas ortopédicos.</p>
+                <p class="p">Nossa missão é <b>ajudá-lo</b> a se recuperar, reduzir a dor e <b>retomar uma vida ativa</b>. Além dos tratamentos, focamos na <b>educação</b> dos pacientes, capacitando-os a tomar decisões informadas sobre sua saúde ortopédica.</p>
+            </div>
+    
+            <div class="footer">
+                <div style="display: flex; justify-content: space-between;">
+                    <h2 class="h1">Nossos Contatos</h2>
+                    <h2 class="h1">For You Clinic</h2>
+                </div>
+                <hr />
+                <div style="display: flex; justify-content: space-between;">
+                    <ul class="menu-list"> 
+                    <li class="items"><a href="contact.html">Whatsapp</a></li>
+                    <br />
+                    <li class="items"><a href="contact.html">Instagram</a></li>
+                    <br />
+                    <li class="items"><a href="contact.html">Facebook</a></li>
+                    </ul>
+                    <img src="orthologo.png" width="120px" height="120px"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

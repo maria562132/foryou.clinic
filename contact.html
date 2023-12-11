@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        html, body {
+            margin: 0;
+        }
+        body {
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .wrapper {
+            width: 1400px;
+            display: flex;
+            margin: 0 auto;
+            background-color: rgb(174, 193, 255);
+        }
+        .main {
+            display: flex;
+            flex-flow: column;
+            width: 85%;
+        }
+        .menu {
+            width: 140px;
+            background-color: rgb(174, 193, 255);
+            padding: 10px 20px 0px;
+        }
+        .menu-list {
+            padding-left: 20px;
+        }
+        .header {
+            min-height: 200px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            min-height: 300px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 100px;
+        }
+        .footer {
+            background-color: rgb(133, 161, 255);
+            min-height: 140px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #193B82;
+        }
+        .p {
+            margin-bottom: 8px;
+            margin-top: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .items {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        label {
+            width: 64px;
+            text-align: left;
+            display: inline-block;
+        }
+        .row {
+            margin-top: 2px;
+        }
+        textarea {
+            font-family: Arial, Helvetica, sans-serif;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <h1 class="h1">Menu</h1>
+            <hr />
+            <ul class="menu-list">
+                <li class="items"><a href="principle.html">Página principal</a></li>
+                <br />
+                <li class="items"><a href="about.html">Sobre nós</a></li>
+                <br />
+                <li class="items"><a href="service.html">Horários de atendimento</a></li>
+                <br />
+                <li class="items"><a href="contact.html">Contatos</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="contact.jpg" height="200px" width="1146px"/>
+            </div>
+    
+            <div class="content">
+                <div>
+                    <h2 class="h1">Números de contato</h2>
+                    <ul class="menu-list">
+                        <li class="items">Celular: 55+ (41) 0000-0000</li>
+                        <li class="items">Whatsapp: 55+ (41) 0000-0000</li>
+                    </ul>
+                    <h2 class="h1">Endereço da clínica:</h2>
+                    <address class="p">R. Napoleão Laureano, 800 - Boqueirão, Curitiba - PR, 81650-210</address>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.1433546724297!2d-49.23861582532415!3d-25.50026513567427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfae6f60683e9%3A0x4bb6209469eaf076!2sOrtopedia%20Boqueir%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1702178019632!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <div>
+                    <form name="contact-form">
+                        <fieldset>
+                            <legend style="color: rgb(20, 82, 255);">Informações de contato</legend>
+                            <label class="row; items">Nome:</label><input type="text" name="name"/>
+                            <br />
+                            <label class="row; items">E-mail:</label><input type="email" name="email"/>
+                            <br />
+                            <label class="row; items">Assunto:</label><input type="text" name="subject"/>
+                            <br />
+                            <label class="row; items">Mensagem:</label>
+                            <br />
+                            <textarea class="row" rows="3" cols="31" name="message"></textarea>
+                            <div>
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Limpar</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>   
+            </div>
+    
+            <div class="footer">
+                <div style="display: flex; justify-content: space-between;">
+                    <h2 class="h1">Nossos Contatos</h2>
+                    <h2 class="h1">For You Clinic</h2>
+                </div>
+                <hr />
+                <div style="display: flex; justify-content: space-between;">
+                    <ul class="menu-list"> 
+                    <li class="items"><a href="contact.html">Whatsapp</a></li>
+                    <br />
+                    <li class="items"><a href="contact.html">Instagram</a></li>
+                    <br />
+                    <li class="items"><a href="contact.html">Facebook</a></li>
+                    </ul>
+                    <img src="orthologo.png" width="120px" height="120px"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
